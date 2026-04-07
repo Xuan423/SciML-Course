@@ -13,6 +13,15 @@ np.random.seed(1234)
 
 from net import FNN
 
+plt.rcParams.update(
+    {
+        'font.family': 'serif',
+        'font.serif': ['Times New Roman', 'Times', 'DejaVu Serif'],
+        'mathtext.fontset': 'stix',
+        'axes.unicode_minus': False,
+    }
+)
+
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print('running on: %s'%(device))
 
@@ -58,10 +67,12 @@ if __name__ == '__main__':
         if n%1000 == 0:
             print('Steps: %d, loss: %.3e'%(n, loss.item()))
 
-    y_test = model(torch.tensor(x_ref, dtype=torch.float32))
+    x_ref_tensor = torch.tensor(x_ref, dtype=torch.float32, device=device)
+    with torch.no_grad():
+        y_test = model(x_ref_tensor)
 
     plt.figure()
-    plt.plot(x_train.numpy(), y_train.numpy(), 'bo')
+    plt.plot(x_train.detach().cpu().numpy(), y_train.detach().cpu().numpy(), 'bo')
     plt.plot(x_ref, y_ref, 'k-')
-    plt.plot(x_ref, y_test.detach().numpy(), 'r--')
+    plt.plot(x_ref, y_test.detach().cpu().numpy(), 'r--')
     plt.show()
