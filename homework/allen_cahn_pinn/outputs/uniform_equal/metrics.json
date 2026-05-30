@@ -1,0 +1,15 @@
+{
+  "experiment": "uniform_equal",
+  "sampling": "uniform",
+  "weight_mode": "equal_weights",
+  "adaptive_points": false,
+  "epochs": 1500,
+  "n_f_initial": 2000,
+  "n_f_final": 2000,
+  "pde_residual_mse": 0.02061322145164013,
+  "ic_mse": 0.03406388312578201,
+  "bc_mse": 0.009338023141026497,
+  "relative_l2_error": 1.2631677389144897,
+  "elapsed_sec": 18.290849539996998,
+  "device": "cpu"
+}

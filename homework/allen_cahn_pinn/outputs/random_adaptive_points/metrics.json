@@ -1,0 +1,15 @@
+{
+  "experiment": "random_adaptive_points",
+  "sampling": "random",
+  "weight_mode": "equal_weights",
+  "adaptive_points": true,
+  "epochs": 1500,
+  "n_f_initial": 2000,
+  "n_f_final": 2800,
+  "pde_residual_mse": 0.013352069072425365,
+  "ic_mse": 0.05090400204062462,
+  "bc_mse": 0.013142568990588188,
+  "relative_l2_error": 1.29151451587677,
+  "elapsed_sec": 18.850619108998217,
+  "device": "cpu"
+}
