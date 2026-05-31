@@ -1,0 +1,11 @@
+file,key,shape,dtype,min,max,mean,std
+/home/xuanli/work/SciML-Course/Codes/Neural_Operator/third_assignment/data/Cavity_Flow.mat,u_bc,"(100, 65)",float64,-0.8419478194835418,0.8419478194835418,0.0,0.4132171140588804
+/home/xuanli/work/SciML-Course/Codes/Neural_Operator/third_assignment/data/Cavity_Flow.mat,u_data,"(100, 65, 65)",float64,-0.3726866,0.9865247,0.006567138093166363,0.2057273960069437
+/home/xuanli/work/SciML-Course/Codes/Neural_Operator/third_assignment/data/Cavity_Flow.mat,v_data,"(100, 65, 65)",float64,-0.5816114,0.3676684,0.00019966698317047107,0.17680058213423283
+/home/xuanli/work/SciML-Course/Codes/Neural_Operator/third_assignment/data/Cavity_Flow.mat,x_2d,"(65, 65)",float64,0.0,1.0,0.5,0.29315098498896436
+/home/xuanli/work/SciML-Course/Codes/Neural_Operator/third_assignment/data/Cavity_Flow.mat,y_2d,"(65, 65)",float64,0.0,1.0,0.5,0.29315098498896436
+/home/xuanli/work/SciML-Course/Codes/Neural_Operator/third_assignment/data/Cavity_Flow_Test.mat,u_bc,"(10, 65)",float64,-0.7437205738771285,0.7444009357514586,-0.061403373014029664,0.39278015220001394
+/home/xuanli/work/SciML-Course/Codes/Neural_Operator/third_assignment/data/Cavity_Flow_Test.mat,u_data,"(10, 65, 65)",float64,-0.3705136,0.9865247,0.006549119942757959,0.20561104690740972
+/home/xuanli/work/SciML-Course/Codes/Neural_Operator/third_assignment/data/Cavity_Flow_Test.mat,v_data,"(10, 65, 65)",float64,-0.5815659,0.3655758,0.00019235066926854817,0.17644597712347718
+/home/xuanli/work/SciML-Course/Codes/Neural_Operator/third_assignment/data/Cavity_Flow_Test.mat,x_2d,"(65, 65)",float64,0.0,1.0,0.5,0.29315098498896436
+/home/xuanli/work/SciML-Course/Codes/Neural_Operator/third_assignment/data/Cavity_Flow_Test.mat,y_2d,"(65, 65)",float64,0.0,1.0,0.5,0.29315098498896436

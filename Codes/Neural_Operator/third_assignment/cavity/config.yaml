@@ -1,0 +1,32 @@
+seed: 1234
+device: auto
+
+paths:
+  train_mat: ../data/Cavity_Flow.mat
+  test_mat: ../data/Cavity_Flow_Test.mat
+  output_dir: ../outputs
+  report_assets: ../report_assets
+  word_report: ../../../../homework/homework3_report.docx
+
+training:
+  batch_size: 10
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  deeponet_epochs: 350
+  fno_epochs: 350
+  eval_every: 25
+
+deeponet:
+  latent_dim: 96
+  branch_width: 128
+  trunk_width: 128
+  depth: 3
+
+fno:
+  modes1: 12
+  modes2: 12
+  width: 24
+  depth: 4
+
+visualization:
+  sample_index: 0
